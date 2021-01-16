@@ -22,7 +22,7 @@ The `.vstatus` command, gives you the current status of the Valorant European Se
 
 The `.vupdate` command, gives you the latest Game Update News concerning Valorant.
 
-#Command List
+## Command List
 * `.stats [player#ID]` _(in progress)_
 * `.vrank [player#ID]` _(in progress)_
 * `.vstatus`
