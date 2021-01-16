@@ -18,4 +18,14 @@ Using the `.vrank [player#ID]` command, **VALBOT** will automaticaly give that u
 
 _ex: in-game rank: Diamond 2 | discord role: Diamond._
 
+The `.vstatus` command, gives you the current status of the Valorant European Servers.
+
+The `.vupdate` command, gives you the latest Game Update News concerning Valorant.
+
+#Command List
+* `.stats [player#ID]` _(in progress)_
+* `.vrank [player#ID]` _(in progress)_
+* `.vstatus`
+* `.vupdate`
+
 _**VALBOT** was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project._
