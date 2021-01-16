@@ -15,20 +15,6 @@ class MainCommands(commands.Cog):
     async def on_ready(self):
         print('Bot is online.')
 
-    #Member joins the server - adds a new role & sends msg
-    @commands.Cog.listener()
-    async def on_member_join(self, member, ctx):
-        role = discord.utils.get(member.server.roles, id="<@&705141690096418876>")
-        await client.add_roles(member, role)
-        await ctx.send (f'Atão {member} :wave:, bem-vindo ao Last Resort!')
-        print(f'{member} has joined the server.')
-
-    #Member leaves the server & sends msg
-    @commands.Cog.listener()
-    async def on_member_remove(self, member, ctx):
-        await ctx.send (f'O {member} bazou do Last Resort :neutral_face:')
-        print(f'{member} has left the server.')
-
     #Valorant Game Update News
     @commands.command()
     async def v(self, ctx):
