@@ -28,4 +28,4 @@ for filename in os.listdir('./cogs'):
 async def clear (ctx, amount=5):
     await ctx.channel.purge(limit=amount)
 
-client.run('Nzk4NjYwNDE1MjE0NzE0OTMx.X_4QeQ.5iSzaj3z3iaKSOoLCOVNIndaI-o')
+client.run('ODAwMDMyNzg5NjQ1ODg1NDUw.YAMOmA.-BNc6AGMCermd0JJobKKG1UxUXg')
