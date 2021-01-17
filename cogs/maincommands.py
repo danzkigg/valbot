@@ -82,7 +82,7 @@ class MainCommands(commands.Cog):
 
                 embed.add_field(name = 'Place', value= ':two:', inline = True)
                 embed.add_field(name = 'Nickname', value= data['players'][1]['gameName'], inline = True)
-                embed.add_field(name = 'Tagline', value= data['players'][0]['tagLine'], inline = True)
+                embed.add_field(name = 'Tagline', value= data['players'][1]['tagLine'], inline = True)
                 embed.add_field(name = 'Number of Wins', value= data['players'][1]['numberOfWins'], inline = True)
                 embed.add_field(name = 'Ranked Rating', value= data['players'][1]['rankedRating'], inline = True)
                 embed.add_field(name = '\u200b', value= '\u200b', inline = True)
@@ -91,7 +91,7 @@ class MainCommands(commands.Cog):
 
                 embed.add_field(name = 'Place', value= ':three:', inline = True)
                 embed.add_field(name = 'Nickname', value= data['players'][2]['gameName'], inline = True)
-                embed.add_field(name = 'Tagline', value= data['players'][0]['tagLine'], inline = True)
+                embed.add_field(name = 'Tagline', value= data['players'][2]['tagLine'], inline = True)
                 embed.add_field(name = 'Number of Wins', value= data['players'][2]['numberOfWins'], inline = True)
                 embed.add_field(name = 'Ranked Rating', value= data['players'][2]['rankedRating'], inline = True)
                 embed.add_field(name = '\u200b', value= '\u200b', inline = True)
