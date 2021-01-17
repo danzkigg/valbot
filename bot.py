@@ -2,6 +2,10 @@ import discord
 import json
 import os
 from discord.ext import commands
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = commands.Bot(command_prefix = '.')
 
@@ -28,4 +32,4 @@ for filename in os.listdir('./cogs'):
 async def clear (ctx, amount=5):
     await ctx.channel.purge(limit=amount)
 
-client.run('ODAwMDMyNzg5NjQ1ODg1NDUw.YAMOmA.-BNc6AGMCermd0JJobKKG1UxUXg')
+client.run(TOKEN)

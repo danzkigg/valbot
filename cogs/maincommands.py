@@ -4,6 +4,9 @@ import json
 from aiohttp import request
 from urllib.request import urlopen
 from discord.ext import commands
+from dotenv import load_dotenv
+
+load_dotenv('./cogs/.env')
 
 class MainCommands(commands.Cog):
 
@@ -32,7 +35,8 @@ class MainCommands(commands.Cog):
     #Check Valorant EU Server Status
     @commands.command()
     async def vstatus(self, ctx):
-        url = 'https://eu.api.riotgames.com/val/status/v1/platform-data?api_key=RGAPI-358734cc-7ff4-4e13-84c9-34bb1c1611df'
+        API = os.getenv('RIOT_API')
+        url = 'https://eu.api.riotgames.com/val/status/v1/platform-data?api_key=' + API
 
         async with request('GET', url) as response:
             data = await response.json()
